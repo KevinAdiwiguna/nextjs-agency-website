@@ -18,6 +18,12 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        inter: ["var(--font-inter)"],
+        mintserrat: ["var(--font-montserrat)"],
+        hanken_grotesk: ["var(--font-hanken-grotesk)"],
+
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
