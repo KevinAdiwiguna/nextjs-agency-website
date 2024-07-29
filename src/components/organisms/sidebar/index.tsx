@@ -11,7 +11,7 @@ import { ThreeBars } from "@/assets/icons/three-bars"
 import { NAVIGATION } from "@/constants/navigation"
 
 // Hooks
-import useActiveSection from '@/hooks/use-active-section';
+import { useActiveSection } from '@/hooks/use-active-section';
 
 export const Sidebar = () => {
     const { isOpen, setIsOpen } = useContext(SidebarContext)
@@ -19,11 +19,11 @@ export const Sidebar = () => {
 
     return (
         <div className="relative">
-            <div className={`sm:hidden top-0 right-0 w-full h-full fixed z-30 transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"} bg-[#19191B] backdrop-blur-md`}>
+            <div className={`sm:hidden top-0 right-0 w-full h-full fixed z-30 transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"} backdrop-blur-md`}>
                 <div className="w-full h-full flex flex-col justify-center gap-y-12 text-3xl items-center">
-                {NAVIGATION.map((res) => (
-                    <Link href={res.url} key={res.url} className={activeSection === res.url.slice(1) ? 'text-[#5454D4]' : 'text-white'} onClick={() => setIsOpen(false)}>{res.name}</Link>
-                ))}
+                    {NAVIGATION.map((res) => (
+                        <Link href={res.url} key={res.url} className={activeSection === res.url.slice(1) ? 'text-[#5454D4] font-semibold' : 'text-white'} onClick={() => setIsOpen(false)}>{res.name}</Link>
+                    ))}
                 </div>
             </div>
 
