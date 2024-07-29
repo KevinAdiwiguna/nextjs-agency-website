@@ -1,7 +1,7 @@
 "use client"
 import { useEffect, useState } from 'react';
 
-const useActiveSection = () => {
+export const useActiveSection = () => {
     const [activeSection, setActiveSection] = useState<string>('');
 
     useEffect(() => {
@@ -26,4 +26,3 @@ const useActiveSection = () => {
     return activeSection;
 };
 
-export default useActiveSection;
