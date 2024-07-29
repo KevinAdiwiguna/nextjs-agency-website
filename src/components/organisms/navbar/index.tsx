@@ -7,14 +7,15 @@ import { NAVIGATION } from '@/constants/navigation';
 import { Button } from "@/components/atom/button";
 
 // Hooks
-import useActiveSection from '@/hooks/use-active-section';
+import {useActiveSection} from '@/hooks/use-active-section';
+import { useScroll } from "@/hooks/use-scroll";
 
 export const Navbar = () => {
    const activeSection = useActiveSection()
-
+   const isScrolled = useScroll();
 
     return (
-        <div className="fixed w-full top-0 px-4 hidden sm:block">
+        <div className={`fixed w-full top-0 px-4 hidden z-[100] sm:block duration-300 ${isScrolled ? 'backdrop-blur-md' : "bg-transparent"}`}>
             <div className="container mx-auto flex items-center justify-between py-4">
                 <Link href={'/'} className="flex justify-center items-center gap-x-2">
                     <div>
