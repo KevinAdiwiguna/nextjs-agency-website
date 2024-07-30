@@ -6,6 +6,10 @@ export const NAVIGATION: NAVIGATIONProps[] = [
         name: "Home",
     },
     {
+        url: "#about-us",
+        name: "About Us",
+    },
+    {
         url: "#service",
         name: "Service",
     },
@@ -13,8 +17,4 @@ export const NAVIGATION: NAVIGATIONProps[] = [
     //     url: "#our-project",
     //     name: "Our Project",
     // },
-    {
-        url: "#about-us",
-        name: "About Us",
-    }
 ];
