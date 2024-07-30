@@ -88,6 +88,14 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="flex flex-col sm:flex-row py-12 container mx-auto px-4 sm:space-y-0 space-y-12 sm:space-x-12 justify-around items-center">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold flex-grow sm:w-2/3">Contact us for the service <span className="lg:block">you want to use</span></h2>
+        <div className="flex-shrink-0">
+          <Button variant="primary" size="xl" className="w-fit h-fit">
+            Contact us
+          </Button>
+        </div>
+      </section>
     </>
   );
 }
