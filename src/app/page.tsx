@@ -51,7 +51,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container mx-auto px-4 space-y-12 py-12">
+      <section className="container mx-auto px-4 space-y-12 py-12" id="about-us">
         <div className="space-y-8 sm:space-y-0 grid sm:grid-cols-2 items-start">
           <h2 className="text-3xl hanken_grotesk font-bold sm:text-4xl xl:text-6xl">Why Enver Is The <span className="block">Best Choice?</span></h2>
           <p className="opacity-70 sm:text-lg">Watch this one minute video so you <span className="block sm:inline">understand why you should use our services!</span></p>
