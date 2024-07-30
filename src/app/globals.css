@@ -4,8 +4,9 @@
 
 @layer base {
   body {
-    @apply bg-[#19191B] text-white scroll-smooth;
+    @apply bg-[#19191B] text-white overflow-x-hidden overflow-y-visible;
   }
+
   * {
     @apply scroll-smooth
   }

@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${hanken_grotesk} ${inter} ${montserrat} overflow-x-hidden w-full`}>
+      <body className={`${hanken_grotesk} ${inter} ${montserrat}`}>
         <SidebarContextProvider>
           <Navbar />
           <Sidebar />
